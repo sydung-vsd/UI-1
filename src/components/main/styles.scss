@@ -1,0 +1,39 @@
+@import '../../styles/_variables.scss';
+
+.hero {
+  &-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 0 40px;
+  }
+  &-img {
+    position: absolute;
+    top: 50%;
+    transform: translate(40px, -50%);
+    right: 0;
+  }
+  &-button:hover {
+    background-color: white;
+    color: $primary-color;
+    border: 1px solid $primary-color;
+    transition: ease 0.5s;
+  }
+  &-content {
+    width: 100%;
+    max-width: 555px;
+  }
+  &-header {
+    margin-bottom: 20px;
+    font-size: 50px;
+    font-weight: 500;
+    line-height: calc(70 / 50);
+  }
+  &-descr {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: calc(30 / 16);
+    color: $text-color;
+    margin-bottom: 50px;
+  }
+}
